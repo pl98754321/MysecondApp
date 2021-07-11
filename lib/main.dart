@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'emtypage.dart';
+import 'Page/emtypage.dart';
 import 'bodyshow.dart';
-import 'activity.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: MyHomePage(),
     );

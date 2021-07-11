@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'activity.dart';
+import 'package:flutter_application_2/provider/TransectionPro.dart';
+import 'model/activity.dart';
+import 'model/liststr.dart';
 
 class Feed extends StatefulWidget {
   @override
@@ -23,7 +25,11 @@ class _FeedState extends State<Feed> {
     return ListView.builder(
       itemCount: listwidget.length,
       itemBuilder: (BuildContext context, int index) {
-        return Activity(listwidget[index], index);
+        return Card(
+          margin: EdgeInsets.all(10.0),
+          elevation: 50,
+          child: Activity(listwidget[index], index),
+        );
       },
     );
   }
